@@ -6,13 +6,16 @@
 <body>
     <h1>🧶 Welcome to Sue's Crafts!</h1>
     
-    <!-- Image at root level - NO "images/" in the path -->
-    <img src="IMG_20211208_133409_049.webp" alt="Crochet dolls" style="max-width: 500px; width: 100%; border: 2px solid #6b4c3b;">
+    <!-- This is the correct path to your image -->
+    <img src="images/IMG_20211208_133409_049.webp" alt="Crochet dolls" style="max-width: 500px; width: 100%; border: 2px solid #6b4c3b; border-radius: 10px;">
     
-    <p>Handmade crochet dolls with love</p>
+    <p>Two adorable crochet dolls made with love! 💕</p>
+    <p>Each doll took hours of careful stitching to create.</p>
     
-    <a href="mailto:suesjeans@gmail.com" style="display: inline-block; background-color: #6b4c3b; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none;">📧 Contact Us</a>
+    <br>
+    <a href="mailto:suesjeans@gmail.com" style="display: inline-block; background-color: #6b4c3b; color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-size: 1.2em;">📧 Contact Us</a>
     
-    <p>© 2026 Sue's Crafts</p>
+    <p style="margin-top: 30px; color: #8b6b5a;">© 2026 Sue's Crafts | Handcrafted with ❤️</p>
 </body>
 </html>
+
