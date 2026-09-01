@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sue's Crafts</title>
+    <title>TESTING - Sue's Crafts</title>
 </head>
 <body>
-    <h1>🧶 Welcome to Sue's Crafts!</h1>
-    
-    <!-- This is the correct path to your image -->
-    <img src="images/IMG_20211208_133409_049.webp" alt="Crochet dolls" style="max-width: 500px; width: 100%; border: 2px solid #6b4c3b; border-radius: 10px;">
-    
-    <p>Two adorable crochet dolls made with love! 💕</p>
-    <p>Each doll took hours of careful stitching to create.</p>
+    <!-- BIG OBVIOUS TEXT TO TEST -->
+    <h1 style="color: red; font-size: 4em;">TEST PAGE - Can you see this?</h1>
+    <p style="font-size: 2em; background-color: yellow;">If you can read this, the HTML is updating!</p>
+    <p style="font-size: 1.5em; color: blue;">Today's date: September 1, 2026</p>
+    <p style="font-size: 1.5em; color: green;">This is a test to check if changes are working.</p>
     
     <br>
     <a href="mailto:suesjeans@gmail.com" style="display: inline-block; background-color: #6b4c3b; color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-size: 1.2em;">📧 Contact Us</a>
-    
-    <p style="margin-top: 30px; color: #8b6b5a;">© 2026 Sue's Crafts | Handcrafted with ❤️</p>
 </body>
 </html>
-
