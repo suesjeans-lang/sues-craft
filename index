@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Sue's Crafts</title>
+</head>
 <body>
-    <h1>Sue's Crafts</h1>
-    <img src="images/IMG_20211208_133409_049.webp" style="max-width:400px; width:100%;">
-    <p>Handmade crochet dolls</p>
-    <a href="mailto:suesjeans@gmail.com">Contact Us</a>
+    <h1>🧶 Welcome to Sue's Crafts!</h1>
+    
+    <!-- Image at root level - NO "images/" in the path -->
+    <img src="IMG_20211208_133409_049.webp" alt="Crochet dolls" style="max-width: 500px; width: 100%; border: 2px solid #6b4c3b;">
+    
+    <p>Handmade crochet dolls with love</p>
+    
+    <a href="mailto:suesjeans@gmail.com" style="display: inline-block; background-color: #6b4c3b; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none;">📧 Contact Us</a>
+    
+    <p>© 2026 Sue's Crafts</p>
 </body>
 </html>
