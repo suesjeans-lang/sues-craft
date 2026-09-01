@@ -1,13 +1,235 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>Sue's Crafts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fdf6e3 0%, #f5e6d3 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #6b4c3b;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .header h1 span {
+            background: linear-gradient(135deg, #e8a87c, #d4896b);
+            padding: 0 15px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #8b6b5a;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Image Container */
+        .artwork-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .artwork-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(107, 76, 59, 0.2);
+            border: 4px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .artwork-container img:hover {
+            transform: scale(1.01);
+        }
+
+        /* Description Box */
+        .description {
+            background: linear-gradient(135deg, #faf0ea, #f5e6dd);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            border-left: 5px solid #d4896b;
+        }
+
+        .description h2 {
+            color: #6b4c3b;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .description p {
+            color: #5a4033;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        .description .fun-fact {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+            font-style: italic;
+            color: #7a5d4a;
+            border: 2px dashed #d4896b;
+        }
+
+        .description .fun-fact::before {
+            content: "💕 ";
+            font-size: 1.2rem;
+        }
+
+        /* Button */
+        .contact-section {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6b4c3b, #8b6b5a);
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(107, 76, 59, 0.3);
+            border: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(107, 76, 59, 0.4);
+            background: linear-gradient(135deg, #7a5d4a, #9b7b6a);
+        }
+
+        .contact-btn:active {
+            transform: translateY(0);
+        }
+
+        .contact-btn .emoji {
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #a08473;
+            font-size: 0.9rem;
+            border-top: 1px solid #e8d5c9;
+            padding-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                border-radius: 20px;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .description h2 {
+                font-size: 1.4rem;
+            }
+
+            .description p {
+                font-size: 1rem;
+            }
+
+            .contact-btn {
+                font-size: 1.1rem;
+                padding: 15px 35px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World! 🌍</h1>
-    <p>Welcome to my first GitHub Pages website!</p>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🧶 Welcome to <span>Sue's Crafts</span>!</h1>
+            <p class="subtitle">✨ Handmade with love, one stitch at a time ✨</p>
+        </div>
+
+        <!-- Artwork Image -->
+        <div class="artwork-container">
+            <img src="images/IMG_20211208_133409_049.webp" alt="Sue's beautiful crochet artwork of two dolls">
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <h2>🌸 About This Piece</h2>
+            <p>
+                This adorable crochet creation features two sweet little dolls, 
+                lovingly handcrafted with care and attention to every detail. 
+                Their smiling faces and cozy outfits make them the perfect 
+                companions for cuddles and playtime!
+            </p>
+            <div class="fun-fact">
+                Did you know? These two best friends took over 15 hours to crochet! 
+                Each stitch was made with love, and their little outfits are 
+                completely removable for dress-up fun! 🧵
+            </div>
+        </div>
+
+        <!-- Contact Button -->
+        <div class="contact-section">
+            <a href="mailto:suesjeans@gmail.com" class="contact-btn">
+                <span class="emoji">📧</span> Contact Us
+            </a>
+            <p style="margin-top: 15px; color: #8b6b5a; font-size: 0.95rem;">
+                Have questions or want to commission a custom piece?<br>
+                We'd love to hear from you!
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2026 Sue's Crafts | Handcrafted with ❤️</p>
+        </div>
+    </div>
 </body>
 </html>
